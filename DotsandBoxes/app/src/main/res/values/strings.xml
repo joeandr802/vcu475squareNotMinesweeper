@@ -3,4 +3,6 @@
     <string name="current_turn">Current Turn: N/A</string>
     <string name="red_score">Red: 0</string>
     <string name="blue_score">Blue: 0</string>
+    <string name="play">Play</string>
+    <string name="placeholder">Placeholder</string>
 </resources>
