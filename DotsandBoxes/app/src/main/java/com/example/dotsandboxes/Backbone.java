@@ -8,9 +8,19 @@ public class Backbone {
     String[][] dotData = new String[sizeBoard][sizeBoard]; //keeps data of board stored
     //important variables for use later
 
+    public void clearBoard(){
+        for(int i = 0; i<sizeBoard; i++){
+            for(int j = 0; j<sizeBoard; j++){
+                dotData[i][j] = "";
+            }
+        }
+    }
+    //clears the board so it can be used for repeat games
+
     public static void main(String[] args){
-        clearBoard(); //sets app to be used later
-        mainGame(); //runs the actual game
-        results(); //displays the results
+        Backbone back = new Backbone();
+        back.clearBoard(); //sets app to be used later
+        back.mainGame(); //runs the actual game
+        back.results(); //displays the results
     }
 }
