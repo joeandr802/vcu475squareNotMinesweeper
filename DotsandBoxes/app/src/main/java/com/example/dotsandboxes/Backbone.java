@@ -16,6 +16,12 @@ public class Backbone {
         }
     }
     //clears the board so it can be used for repeat games
+    
+    public void dotsConnected(int[][] dot1, int[][] dot2){
+        self.dot1 = dot1;
+        self.dot2 = dot2;
+    }
+    //adds functionality to connect to main game about what is played
 
     public void mainGame(){
         int[][] dot1 = new int[sizeBoard][sizeBoard];
