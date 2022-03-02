@@ -1,8 +1,313 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/dots00"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="00"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots"
+                tools:ignore="HardcodedText" />
+
+            <ImageButton
+                android:id="@+id/dots01"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="01"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots02"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="02"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots03"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="03"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots04"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="04"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/dots10"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="10"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots11"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="11"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots12"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="12"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots13"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="13"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots14"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="14"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/dots20"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="20"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots21"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="21"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots22"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="22"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots23"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="23"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots24"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="24"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/dots30"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="30"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots31"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="31"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots32"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="32"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots33"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="33"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots34"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="34"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/dots40"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="40"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots41"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="41"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots42"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="42"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots43"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="43"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+
+            <ImageButton
+                android:id="@+id/dots44"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="44"
+                android:foreground="@drawable/dots"
+                app:srcCompat="@drawable/dots" />
+        </TableRow>
+
+    </TableLayout>
 
     <TextView
         android:id="@+id/currentTurnText"
@@ -42,4 +347,5 @@
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

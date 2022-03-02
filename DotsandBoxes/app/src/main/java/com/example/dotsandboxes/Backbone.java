@@ -19,7 +19,7 @@ public class Backbone {
     //clears the board so it can be used for repeat games
 
     public boolean isSquareFilled(int x1, int dummyX, int y1, int dummyY){
-
+        return false;
     }
     //lets system know if a certain square was filled
 
@@ -90,7 +90,7 @@ public class Backbone {
         }
         //determines if points need to be added, if any
 
-        updatePoints(pointsMade); //will update points correctly
+        //updatePoints(pointsMade); //will update points correctly
         return result;
     }
     //lets program know if a box was filled in
@@ -121,6 +121,6 @@ public class Backbone {
         Backbone back = new Backbone();
         back.clearBoard(); //sets app to be used later
         back.mainGame(); //runs the actual game
-        back.results(); //displays the results
+        //back.results(); //displays the results
     }
 }
