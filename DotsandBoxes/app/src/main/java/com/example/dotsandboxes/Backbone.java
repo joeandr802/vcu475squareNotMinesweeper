@@ -19,7 +19,7 @@ public class Backbone {
     //clears the board so it can be used for repeat games
 
     public boolean isSquareFilled(int x1, int dummyX, int y1, int dummyY){
-        return false;
+
     }
     //lets system know if a certain square was filled
 
@@ -117,10 +117,22 @@ public class Backbone {
     }
     //game itself
 
+    public void results(){
+        if (p1points == p2points) {
+            System.out.printf("It's a draw!");
+        }
+        else if (p1points > p2points) {
+            System.out.printf("Player 1 wins!");
+        }
+        else {
+            System.out.printf("Player 2 wins!");
+        }
+    }// Decides and shows winner
+
     public static void main(String[] args){
         Backbone back = new Backbone();
         back.clearBoard(); //sets app to be used later
         back.mainGame(); //runs the actual game
-        //back.results(); //displays the results
+        back.results(); //displays the results
     }
 }
