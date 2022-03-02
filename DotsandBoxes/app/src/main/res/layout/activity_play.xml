@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:onClick="getCord">
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -14,63 +15,80 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/dots00"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="00"
                 android:foreground="@drawable/dots"
+                android:onClick="getCord"
                 app:srcCompat="@drawable/dots"
                 tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
 
             <ImageButton
                 android:id="@+id/dots01"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="01"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots02"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="02"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots03"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="03"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots04"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="04"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
+
         </TableRow>
 
         <TableRow
@@ -81,49 +99,68 @@
                 android:id="@+id/dots10"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="10"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h1011"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
+
             <ImageButton
                 android:id="@+id/dots11"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_margin="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="11"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h1112"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
+
             <ImageButton
                 android:id="@+id/dots12"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_margin="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="12"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h1213"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots13"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_margin="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="13"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h1314"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots14"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="14"
                 android:foreground="@drawable/dots"
@@ -138,49 +175,66 @@
                 android:id="@+id/dots20"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="20"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h2021"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots21"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_margin="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="21"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h2122"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots22"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_margin="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="22"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h2223"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots23"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_margin="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="23"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h2324"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots24"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="24"
                 android:foreground="@drawable/dots"
@@ -195,49 +249,66 @@
                 android:id="@+id/dots30"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="30"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h3031"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots31"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_margin="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="31"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h3132"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots32"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_margin="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="32"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h3233"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots33"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_margin="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="33"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h3334"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots34"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="34"
                 android:foreground="@drawable/dots"
@@ -252,55 +323,66 @@
                 android:id="@+id/dots40"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="40"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h4041"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots41"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="41"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h4142"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots42"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="42"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h4243"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots43"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="43"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
+            <ImageView
+                android:id="@+id/h4344"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/horiz" />
+
             <ImageButton
                 android:id="@+id/dots44"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="44"
                 android:foreground="@drawable/dots"
