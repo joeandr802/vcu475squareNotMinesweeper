@@ -29,6 +29,8 @@ public class Backbone {
 
         if(x1 == x2){ //if nodes are vertical from each other
             if(y1>y2){
+                dotData[x1][y1] += 'U';
+                dotData[x2][y2] += 'D';
                 if(x1 - 1 >= 0)//if the dummy y won't go out of bounds
                     if(isSquareFilled(x1, x1-1, y1, y1-1)){
                         pointsMade++;
@@ -41,6 +43,8 @@ public class Backbone {
                     }
             }
             else{
+                dotData[x1][y1] += 'D';
+                dotData[x2][y2] += 'U';
                 if(x2 - 1 >= 0)//if the dummy y won't go out of bounds
                     if(isSquareFilled(x2, x2-1, y2, y2-1)){
                         pointsMade++;
@@ -56,6 +60,8 @@ public class Backbone {
 
         if(y1 == y2){ //if nodes are horizontal from each other
             if(x1>x2){
+                dotData[x1][y1] += 'L';
+                dotData[x2][y2] += 'R';
                 if(y1 - 1 >= 0)//if the dummy y won't go out of bounds
                     if(isSquareFilled(x1, x1-1, y1, y1-1)){
                         pointsMade++;
@@ -68,6 +74,8 @@ public class Backbone {
                     }
             }
             else{
+                dotData[x1][y1] += 'R';
+                dotData[x2][y2] += 'L';
                 if(y2 - 1 >= 0)//if the dummy y won't go out of bounds
                     if(isSquareFilled(x2, x2-1, y2, y2-1)){
                         pointsMade++;
