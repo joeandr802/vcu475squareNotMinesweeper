@@ -18,9 +18,72 @@ public class Backbone {
     }
     //clears the board so it can be used for repeat games
 
+    public boolean isSquareFilled(int x1, int dummyX, int y1, int dummyY){
+
+    }
+    //lets system know if a certain square was filled
+
     public boolean isConnectPoints(int x1, int x2, int y1, int y2){
         int pointsMade = 0; //home many points were made this turn
         boolean result = false;
+
+        if(x1 == x2){ //if nodes are vertical from each other
+            if(y1>y2){
+                if(x1 - 1 >= 0)//if the dummy y won't go out of bounds
+                    if(isSquareFilled(x1, x1-1, y1, y1-1)){
+                        pointsMade++;
+                        result = true;
+                    }
+                if(x2 + 1 <sizeBoard)//if the dummy y won't go out of bounds
+                    if(isSquareFilled(x2, x2+1, y2, y2+1)){
+                        pointsMade++;
+                        result = true;
+                    }
+            }
+            else{
+                if(x2 - 1 >= 0)//if the dummy y won't go out of bounds
+                    if(isSquareFilled(x2, x2-1, y2, y2-1)){
+                        pointsMade++;
+                        result = true;
+                    }
+                if(x1 + 1 < sizeBoard)//if the dummy y won't go out of bounds
+                    if(isSquareFilled(x1, x1+1, y1, y1+1)){
+                        pointsMade++;
+                        result = true;
+                    }
+            }
+        }
+
+        if(y1 == y2){ //if nodes are horizontal from each other
+            if(x1>x2){
+                if(y1 - 1 >= 0)//if the dummy y won't go out of bounds
+                    if(isSquareFilled(x1, x1-1, y1, y1-1)){
+                        pointsMade++;
+                        result = true;
+                }
+                if(y2 + 1 <sizeBoard)//if the dummy y won't go out of bounds
+                    if(isSquareFilled(x2, x2+1, y2, y2+1)){
+                        pointsMade++;
+                        result = true;
+                    }
+            }
+            else{
+                if(y2 - 1 >= 0)//if the dummy y won't go out of bounds
+                    if(isSquareFilled(x2, x2-1, y2, y2-1)){
+                        pointsMade++;
+                        result = true;
+                }
+                if(y1 + 1 < sizeBoard)//if the dummy y won't go out of bounds
+                    if(isSquareFilled(x1, x1+1, y1, y1+1)){
+                        pointsMade++;
+                        result = true;
+                    }
+            }
+        }
+        //determines if points need to be added, if any
+
+        updatePoints(pointsMade); //will update points correctly
+        return result;
     }
     //lets program know if a box was filled in
 
