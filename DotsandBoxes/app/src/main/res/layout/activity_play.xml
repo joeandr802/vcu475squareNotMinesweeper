@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,UsingOnClickInXml">
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -25,8 +26,7 @@
                 android:contentDescription="00"
                 android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
-                app:srcCompat="@drawable/dots"
-                tools:ignore="HardcodedText" />
+                app:srcCompat="@drawable/dots" />
 
             <ImageView
                 android:id="@+id/h0001"
