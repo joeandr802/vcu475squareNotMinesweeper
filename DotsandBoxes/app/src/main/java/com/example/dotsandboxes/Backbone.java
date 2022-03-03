@@ -18,10 +18,22 @@ public class Backbone {
     }
     //clears the board so it can be used for repeat games
 
-    public boolean isSquareFilled(int x1, int dummyX, int y1, int dummyY){
-
+    public boolean isSquareFilled(int x1, int dummyX, int y1, int dummyY, int form){
+        if (form == 0)  { //Base needs U and L, Dummy needs D and R
+            if ((dotData[x1][y1].contains("U") && dotData[x1][y1].contains("L")) && (dotData[dummyX][dummyY].contains("D") && dotData[dummyX][dummyY].contains("R"))) {
+                return true;
+            }
+        }
+        if (form == 1) { //Base needs D and R, Dummy needs U and L
+            if ((dotData[x1][y1].contains("D") && dotData[x1][y1].contains("R")) && (dotData[dummyX][dummyY].contains("U") && dotData[dummyX][dummyY].contains("L"))) {
+                return true;
+            }
+        }
+        return false;
     }
     //lets system know if a certain square was filled
+
+
 
     public boolean isConnectPoints(int x1, int x2, int y1, int y2){
         int pointsMade = 0; //home many points were made this turn
@@ -32,12 +44,12 @@ public class Backbone {
                 dotData[x1][y1] += 'U';
                 dotData[x2][y2] += 'D';
                 if(x1 - 1 >= 0)//if the dummy y won't go out of bounds
-                    if(isSquareFilled(x1, x1-1, y1, y1-1)){
+                    if(isSquareFilled(x1, x1-1, y1, y1-1, 0)){
                         pointsMade++;
                         result = true;
                     }
                 if(x2 + 1 <sizeBoard)//if the dummy y won't go out of bounds
-                    if(isSquareFilled(x2, x2+1, y2, y2+1)){
+                    if(isSquareFilled(x2, x2+1, y2, y2+1, 1)){
                         pointsMade++;
                         result = true;
                     }
@@ -46,12 +58,12 @@ public class Backbone {
                 dotData[x1][y1] += 'D';
                 dotData[x2][y2] += 'U';
                 if(x2 - 1 >= 0)//if the dummy y won't go out of bounds
-                    if(isSquareFilled(x2, x2-1, y2, y2-1)){
+                    if(isSquareFilled(x2, x2-1, y2, y2-1, 0)){
                         pointsMade++;
                         result = true;
                     }
                 if(x1 + 1 < sizeBoard)//if the dummy y won't go out of bounds
-                    if(isSquareFilled(x1, x1+1, y1, y1+1)){
+                    if(isSquareFilled(x1, x1+1, y1, y1+1, 1)){
                         pointsMade++;
                         result = true;
                     }
@@ -63,12 +75,12 @@ public class Backbone {
                 dotData[x1][y1] += 'L';
                 dotData[x2][y2] += 'R';
                 if(y1 - 1 >= 0)//if the dummy y won't go out of bounds
-                    if(isSquareFilled(x1, x1-1, y1, y1-1)){
+                    if(isSquareFilled(x1, x1-1, y1, y1-1, 0)){
                         pointsMade++;
                         result = true;
                 }
                 if(y2 + 1 <sizeBoard)//if the dummy y won't go out of bounds
-                    if(isSquareFilled(x2, x2+1, y2, y2+1)){
+                    if(isSquareFilled(x2, x2+1, y2, y2+1, 1)){
                         pointsMade++;
                         result = true;
                     }
@@ -77,12 +89,12 @@ public class Backbone {
                 dotData[x1][y1] += 'R';
                 dotData[x2][y2] += 'L';
                 if(y2 - 1 >= 0)//if the dummy y won't go out of bounds
-                    if(isSquareFilled(x2, x2-1, y2, y2-1)){
+                    if(isSquareFilled(x2, x2-1, y2, y2-1, 0)){
                         pointsMade++;
                         result = true;
                 }
                 if(y1 + 1 < sizeBoard)//if the dummy y won't go out of bounds
-                    if(isSquareFilled(x1, x1+1, y1, y1+1)){
+                    if(isSquareFilled(x1, x1+1, y1, y1+1, 1)){
                         pointsMade++;
                         result = true;
                     }
