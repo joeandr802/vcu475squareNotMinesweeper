@@ -20,12 +20,14 @@ public class Backbone {
 
     public boolean isSquareFilled(int x1, int dummyX, int y1, int dummyY, int form){
         if (form == 0)  { //Base needs U and L, Dummy needs D and R
-            if ((dotData[x1][y1].contains("U") && dotData[x1][y1].contains("L")) && (dotData[dummyX][dummyY].contains("D") && dotData[dummyX][dummyY].contains("R"))) {
+            if ((dotData[x1][y1].contains("U") && dotData[x1][y1].contains("L"))
+                    && (dotData[dummyX][dummyY].contains("D") && dotData[dummyX][dummyY].contains("R"))) {
                 return true;
             }
         }
         if (form == 1) { //Base needs D and R, Dummy needs U and L
-            if ((dotData[x1][y1].contains("D") && dotData[x1][y1].contains("R")) && (dotData[dummyX][dummyY].contains("U") && dotData[dummyX][dummyY].contains("L"))) {
+            if ((dotData[x1][y1].contains("D") && dotData[x1][y1].contains("R"))
+                    && (dotData[dummyX][dummyY].contains("U") && dotData[dummyX][dummyY].contains("L"))) {
                 return true;
             }
         }
@@ -33,7 +35,14 @@ public class Backbone {
     }
     //lets system know if a certain square was filled
 
-
+    public void updatePoints(int points) {
+        if (currTurn) {
+            p1points += points;
+        }
+        else {
+            p2points += points;
+        }
+    }
 
     public boolean isConnectPoints(int x1, int x2, int y1, int y2){
         int pointsMade = 0; //home many points were made this turn
@@ -102,7 +111,7 @@ public class Backbone {
         }
         //determines if points need to be added, if any
 
-        //updatePoints(pointsMade); //will update points correctly
+        updatePoints(pointsMade); //will update points correctly
         return result;
     }
     //lets program know if a box was filled in
