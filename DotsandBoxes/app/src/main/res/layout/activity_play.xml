@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="getCord">
+    android:onClick="dotClicked">
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -24,8 +24,8 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="00"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
-                android:onClick="getCord"
                 app:srcCompat="@drawable/dots"
                 tools:ignore="HardcodedText" />
 
@@ -33,6 +33,7 @@
                 android:id="@+id/h0001"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -41,6 +42,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="01"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -48,6 +50,7 @@
                 android:id="@+id/h0102"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -56,6 +59,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="02"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -63,6 +67,7 @@
                 android:id="@+id/h0203"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -71,6 +76,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="03"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -78,6 +84,7 @@
                 android:id="@+id/h0304"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -86,6 +93,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="04"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -99,6 +107,7 @@
                 android:id="@+id/v0010"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -111,6 +120,7 @@
                 android:id="@+id/v0111"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -123,6 +133,7 @@
                 android:id="@+id/v0212"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -135,6 +146,7 @@
                 android:id="@+id/v0313"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -147,6 +159,7 @@
                 android:id="@+id/v0414"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
         </TableRow>
 
@@ -160,6 +173,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="10"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -167,6 +181,7 @@
                 android:id="@+id/h1011"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
 
@@ -176,6 +191,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="11"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -183,6 +199,7 @@
                 android:id="@+id/h1112"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
 
@@ -192,6 +209,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="12"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -199,6 +217,7 @@
                 android:id="@+id/h1213"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -207,6 +226,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="13"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -214,6 +234,7 @@
                 android:id="@+id/h1314"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -222,6 +243,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="14"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
         </TableRow>
@@ -234,6 +256,7 @@
                 android:id="@+id/v1020"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -246,6 +269,7 @@
                 android:id="@+id/v1121"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -258,6 +282,7 @@
                 android:id="@+id/v1222"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -270,6 +295,7 @@
                 android:id="@+id/v1323"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -282,6 +308,7 @@
                 android:id="@+id/v1424"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
         </TableRow>
 
@@ -295,6 +322,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="20"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -302,6 +330,7 @@
                 android:id="@+id/h2021"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -310,6 +339,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="21"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -317,6 +347,7 @@
                 android:id="@+id/h2122"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -325,6 +356,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="22"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -332,6 +364,7 @@
                 android:id="@+id/h2223"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -340,6 +373,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="23"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -347,6 +381,7 @@
                 android:id="@+id/h2324"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -355,6 +390,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="24"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
         </TableRow>
@@ -367,6 +403,7 @@
                 android:id="@+id/v2030"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -379,6 +416,7 @@
                 android:id="@+id/v2131"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -391,6 +429,7 @@
                 android:id="@+id/v2232"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -403,6 +442,7 @@
                 android:id="@+id/v2333"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -415,6 +455,7 @@
                 android:id="@+id/v2434"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
         </TableRow>
 
@@ -428,6 +469,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="30"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -435,6 +477,7 @@
                 android:id="@+id/h3031"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -443,6 +486,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="31"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -450,6 +494,7 @@
                 android:id="@+id/h3132"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -458,6 +503,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="32"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -465,6 +511,7 @@
                 android:id="@+id/h3233"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -473,6 +520,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="33"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -480,6 +528,7 @@
                 android:id="@+id/h3334"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -488,6 +537,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="34"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
         </TableRow>
@@ -500,6 +550,7 @@
                 android:id="@+id/v3040"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -512,6 +563,7 @@
                 android:id="@+id/v3141"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -524,6 +576,7 @@
                 android:id="@+id/v3242"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -536,6 +589,7 @@
                 android:id="@+id/v3343"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
 
             <ImageView
@@ -548,6 +602,7 @@
                 android:id="@+id/v3444"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/vert" />
         </TableRow>
 
@@ -561,6 +616,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="40"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -568,6 +624,7 @@
                 android:id="@+id/h4041"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -576,6 +633,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="41"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -583,6 +641,7 @@
                 android:id="@+id/h4142"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -591,6 +650,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="42"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -598,6 +658,7 @@
                 android:id="@+id/h4243"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -606,6 +667,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="43"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
 
@@ -613,6 +675,7 @@
                 android:id="@+id/h4344"
                 android:layout_width="24dp"
                 android:layout_height="48dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/horiz" />
 
             <ImageButton
@@ -621,6 +684,7 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="44"
+                android:onClick="dotClicked"
                 android:foreground="@drawable/dots"
                 app:srcCompat="@drawable/dots" />
         </TableRow>
