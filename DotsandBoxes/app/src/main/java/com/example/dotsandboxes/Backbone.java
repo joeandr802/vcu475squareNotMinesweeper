@@ -15,7 +15,6 @@ public class Backbone {
                 dotData[i][j] = "";
             }
         }
-
         p1points = 0;
         p2points = 0;
 
@@ -41,17 +40,13 @@ public class Backbone {
     }
     //lets system know if a certain square was filled
 
-    public String updatePoints(int points) {
+    public void updatePoints(int points) {
         if (currTurn) {
             p1points += points;
-            return p1points + "";
         }
         else {
             p2points += points;
-            return p2points + "";
         }
-
-
     }
 
     public boolean isConnectPoints(int x1, int x2, int y1, int y2){
@@ -62,7 +57,7 @@ public class Backbone {
             if(y1>y2){
                 dotData[x1][y1] += 'U';
                 dotData[x2][y2] += 'D';
-                if(x1 - 1 >= 0 && y1-1 > -1) {//if the dummy y won't go out of bounds
+                if(x1 - 1 > -1 && y1-1 > -1) {//if the dummy y won't go out of bounds
                     if (isSquareFilled(x1, x1 - 1, y1, y1 - 1, 0)) {
                         pointsMade++;
                         result = true;
@@ -81,7 +76,7 @@ public class Backbone {
             else{
                 dotData[x1][y1] += 'D';
                 dotData[x2][y2] += 'U';
-                if(x2 - 1 >= 0 && y2-1 > -1)//if the dummy y won't go out of bounds
+                if(x2 - 1 > -1 && y2-1 > -1)//if the dummy y won't go out of bounds
                     if(isSquareFilled(x2, x2-1, y2, y2-1, 0)){
                         pointsMade++;
                         result = true;
@@ -92,14 +87,13 @@ public class Backbone {
                         result = true;
                     }
             }
-
         }
 
         if(y1 == y2){ //if nodes are horizontal from each other
             if(x1>x2){
                 dotData[x1][y1] += 'L';
                 dotData[x2][y2] += 'R';
-                if(y1 - 1 >= 0 && x1-1 > -1)//if the dummy y won't go out of bounds
+                if(y1 - 1 > -1 && x1-1 > -1)//if the dummy y won't go out of bounds
                     if(isSquareFilled(x1, x1-1, y1, y1-1, 0)){
                         pointsMade++;
                         result = true;
@@ -140,6 +134,18 @@ public class Backbone {
     }
     //adds functionality to connect to main game about what is played
 
+    public void results(){
+        if (p1points == p2points) {
+            System.out.printf("It's a draw!");
+        }
+        else if (p1points > p2points) {
+            System.out.printf("Player 1 wins!");
+        }
+        else {
+            System.out.printf("Player 2 wins!");
+        }
+    }// Decides and shows winner
+
     /*public void mainGame(){
 
         while(numMoves > 0){
@@ -153,18 +159,6 @@ public class Backbone {
         }//while moves remain to be played
     }
     //game itself*/
-
-    public void results(){
-        if (p1points == p2points) {
-            System.out.printf("It's a draw!");
-        }
-        else if (p1points > p2points) {
-            System.out.printf("Player 1 wins!");
-        }
-        else {
-            System.out.printf("Player 2 wins!");
-        }
-    }// Decides and shows winner
 
     /*public static void main(String[] args){
         Backbone back = new Backbone();
