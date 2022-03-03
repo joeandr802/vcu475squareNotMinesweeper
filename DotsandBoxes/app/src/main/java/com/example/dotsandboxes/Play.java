@@ -34,12 +34,7 @@ public class Play extends AppCompatActivity {
 
         if(buttonClicked == 2){
 
-
             back.dotsConnected(coords.get(0), coords.get(1), coords.get(2), coords.get(3));
-            System.out.println(back.x1 + " " + coords.get(0));
-            System.out.println(back.y1 + " " + coords.get(1));
-            System.out.println(back.x2 + " " + coords.get(2));
-            System.out.println(back.y2 + " " + coords.get(3));
 
             String location = "";
 
@@ -49,7 +44,6 @@ public class Play extends AppCompatActivity {
                 location += Math.min(back.x1, back.x2) + "" + back.y1 + "" + Math.max(back.x1, back.x2) + "" + back.y2;
 
             mapViews.get(location).setVisibility(View.VISIBLE);
-
 
             if(!back.isConnectPoints(back.x1, back.x2, back.y1, back.y2)){
                 back.currTurn = !back.currTurn;
@@ -72,7 +66,6 @@ public class Play extends AppCompatActivity {
             buttonClicked = 0;
             coords.clear();
             back.numMoves--;
-            System.out.println(back.numMoves);
             if(back.numMoves == 0) {
                 finish();
                 Intent intent = new Intent(Play.this, MainActivity.class);
@@ -122,6 +115,5 @@ public class Play extends AppCompatActivity {
         mapViews.put("4142", (ImageView)findViewById(R.id.h4142));
         mapViews.put("4243", (ImageView)findViewById(R.id.h4243));
         mapViews.put("4344", (ImageView)findViewById(R.id.h4344));
-
     }
 }
