@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WinScreen">
+
+    <TextView
+        android:id="@+id/scoreBlueText2"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="105dp"
+        android:text="@string/blue_score"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/rematch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scoreRedText2"
+        app:layout_constraintTop_toBottomOf="@+id/winner" />
+
+    <TextView
+        android:id="@+id/scoreRedText2"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="105dp"
+        android:text="@string/red_score"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/rematch"
+        app:layout_constraintEnd_toStartOf="@+id/scoreBlueText2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winner" />
+
+    <Button
+        android:id="@+id/mainMenu"
+        android:layout_width="259dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#8E8E8E"
+        android:text="Main Menu"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/rematch"
+        android:layout_width="259dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#8E8E8E"
+        android:text="Rematch"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="217dp"
+        android:text="default"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/rematch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

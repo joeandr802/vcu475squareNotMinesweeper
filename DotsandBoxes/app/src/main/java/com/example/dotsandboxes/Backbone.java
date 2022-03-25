@@ -18,7 +18,7 @@ public class Backbone {
         p1points = 0;
         p2points = 0;
 
-        numMoves = 40;
+        numMoves = 40;//40
         currTurn = true;
     }
     //clears the board so it can be used for repeat games
