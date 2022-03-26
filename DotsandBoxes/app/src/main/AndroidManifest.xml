@@ -11,7 +11,10 @@
         android:theme="@style/Theme.DotsAndBoxes">
         <activity
             android:name=".Play"
-            android:exported="true"/>
+            android:exported="true" />
+        <activity
+            android:name=".WinScreen"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

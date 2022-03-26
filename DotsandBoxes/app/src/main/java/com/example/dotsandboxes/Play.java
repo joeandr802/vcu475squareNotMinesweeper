@@ -63,12 +63,15 @@ public class Play extends AppCompatActivity {
             temp = (TextView) findViewById(R.id.scoreBlueText);
             temp.setText("Blue: " + back.p2points);
 
+
             buttonClicked = 0;
             coords.clear();
             back.numMoves--;
-            if(back.numMoves == 0) {
+            if(back.numMoves == 0) {//Game ends here
                 finish();
-                Intent intent = new Intent(Play.this, MainActivity.class);
+                Intent intent = new Intent(Play.this, WinScreen.class);
+                intent.putExtra("p1",back.p1points);
+                intent.putExtra("p2",back.p2points);
                 startActivity(intent);
             }
         }
