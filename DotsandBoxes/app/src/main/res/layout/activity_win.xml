@@ -15,6 +15,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="44dp"
         android:layout_marginBottom="105dp"
+        android:fontFamily="@font/crayon_font"
         android:text="@string/blue_score"
         android:textAlignment="center"
         android:textColor="#2196F3"
@@ -22,7 +23,8 @@
         app:layout_constraintBottom_toTopOf="@+id/rematch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/scoreRedText2"
-        app:layout_constraintTop_toBottomOf="@+id/winner" />
+        app:layout_constraintTop_toBottomOf="@+id/winner"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/scoreRedText2"
@@ -32,6 +34,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="44dp"
         android:layout_marginBottom="105dp"
+        android:fontFamily="@font/crayon_font"
         android:text="@string/red_score"
         android:textAlignment="center"
         android:textColor="#F44336"
@@ -39,7 +42,8 @@
         app:layout_constraintBottom_toTopOf="@+id/rematch"
         app:layout_constraintEnd_toStartOf="@+id/scoreBlueText2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/winner" />
+        app:layout_constraintTop_toBottomOf="@+id/winner"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/mainMenu"
@@ -76,6 +80,7 @@
         android:text="default"
         android:textAlignment="center"
         android:textSize="60sp"
+        android:fontFamily="@font/crayon_font"
         app:layout_constraintBottom_toTopOf="@+id/rematch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

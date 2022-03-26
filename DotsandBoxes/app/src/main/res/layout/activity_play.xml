@@ -695,21 +695,23 @@
         android:id="@+id/currentTurnText"
         android:layout_width="332dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/crayon_font"
         android:text="@string/current_turn"
         android:textAlignment="center"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/scoreRedText"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="36dp"
+        android:layout_width="131dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="52dp"
+        android:fontFamily="@font/crayon_font"
         android:text="@string/red_score"
         android:textAlignment="center"
         android:textColor="#F44336"
@@ -727,6 +729,7 @@
         android:textAlignment="center"
         android:textColor="#2196F3"
         android:textSize="32sp"
+        android:fontFamily="@font/crayon_font"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
