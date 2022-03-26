@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/betterBackground"
     android:layout_height="match_parent"
+    android:background="@drawable/better_background"
     tools:context=".WinScreen">
 
     <TextView
@@ -77,10 +77,10 @@
         android:layout_marginTop="138dp"
         android:layout_marginEnd="65dp"
         android:layout_marginBottom="217dp"
+        android:fontFamily="@font/crayon_font"
         android:text="default"
         android:textAlignment="center"
         android:textSize="60sp"
-        android:fontFamily="@font/crayon_font"
         app:layout_constraintBottom_toTopOf="@+id/rematch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
