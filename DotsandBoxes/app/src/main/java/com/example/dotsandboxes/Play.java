@@ -14,6 +14,7 @@ public class Play extends AppCompatActivity {
     public ArrayList<Integer> coords = new ArrayList<Integer>();
     public int buttonClicked = 0;
     public HashMap<String, ImageView> mapViews = new HashMap<>();
+    public ImageButton button;
 
     Backbone back = new Backbone(); //new backbone object
 
@@ -21,6 +22,12 @@ public class Play extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+
+        button = findViewById(R.id.pauseButton);
+        button.setOnClickListener(v -> {
+            Intent intent = new Intent(Play.this, MainActivity.class);
+            startActivity(intent);
+        });
 
         back.clearBoard();
         mapID();
