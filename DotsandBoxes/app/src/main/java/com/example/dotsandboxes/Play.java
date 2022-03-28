@@ -25,7 +25,7 @@ public class Play extends AppCompatActivity {
 
         button = findViewById(R.id.pauseButton);
         button.setOnClickListener(v -> {
-            Intent intent = new Intent(Play.this, MainActivity.class);
+            Intent intent = new Intent(Play.this, Pause.class);
             startActivity(intent);
         });
 
