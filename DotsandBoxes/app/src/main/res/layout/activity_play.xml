@@ -745,6 +745,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_media_pause"
-        app:tint="#000000" />
+        app:tint="#2B2B2B" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

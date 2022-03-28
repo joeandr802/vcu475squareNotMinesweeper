@@ -16,6 +16,9 @@
             android:name=".WinScreen"
             android:exported="true" />
         <activity
+            android:name=".Pause"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

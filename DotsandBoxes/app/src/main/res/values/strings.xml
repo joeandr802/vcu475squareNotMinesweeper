@@ -4,5 +4,8 @@
     <string name="red_score">Red: 0</string>
     <string name="blue_score">Blue: 0</string>
     <string name="play">Play</string>
+    <string name="resume">Resume</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="pauseTitle">Paused</string>
     <string name="placeholder">Placeholder</string>
 </resources>

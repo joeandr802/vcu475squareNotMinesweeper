@@ -4,45 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/better_background"
-    tools:context=".MainActivity">
+    android:background="@drawable/better_background">
 
     <TextView
-        android:id="@+id/titleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/pauseTitle"
+        android:layout_width="236dp"
+        android:layout_height="82dp"
         android:layout_marginTop="64dp"
         android:fontFamily="@font/crayon_font"
-        android:text="@string/app_name"
+        android:text="@string/pauseTitle"
         android:textAlignment="center"
         android:textColor="#2B2B2B"
-        android:textSize="56sp"
+        android:textSize="64sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="173dp"
-        android:layout_height="173dp"
-        android:layout_marginTop="72dp"
-        android:contentDescription="@string/placeholder"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleText"
-        app:srcCompat="@drawable/dots" />
-
     <Button
-        android:id="@+id/playButton"
+        android:id="@+id/resumeButton"
         android:layout_width="259dp"
         android:layout_height="96dp"
-        android:layout_marginBottom="200dp"
         android:backgroundTint="#8E8E8E"
         android:fontFamily="@font/crayon_font"
-        android:text="@string/play"
-        android:textSize="48sp"
+        android:text="@string/resume"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="259dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#8E8E8E"
+        android:fontFamily="@font/crayon_font"
+        android:text="@string/main_menu"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resumeButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
