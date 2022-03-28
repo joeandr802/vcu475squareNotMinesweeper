@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#605F5F">
+
+    <ImageView
+        android:id="@+id/step_2_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/step_2" />
+
+    <TextView
+        android:id="@+id/step_2_text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step_2_image"
+        android:layout_centerHorizontal="true"
+
+        android:fontFamily="@font/crayon_font"
+        android:text="Each player takes turns\nconnecting two dots\nto create one side of a square\n(click on two dots)"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/next_2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step_2_text"
+        android:layout_centerHorizontal="true"
+
+        android:backgroundTint="#4756A5"
+        android:fontFamily="@font/crayon_font"
+        android:text="Next"
+        android:textSize="24sp" />
+
+</RelativeLayout>
