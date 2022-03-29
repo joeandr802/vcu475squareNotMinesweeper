@@ -8,6 +8,7 @@
     <string name="main_menu">Main Menu</string>
     <string name="rematch">Rematch</string>
     <string name="winner">Default</string>
+    <string name="tutorial">Tutorial</string>
     <string name="pauseTitle">Paused</string>
     <string name="placeholder">Placeholder</string>
 </resources>

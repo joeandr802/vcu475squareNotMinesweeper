@@ -52,7 +52,8 @@
         android:layout_marginTop="24dp"
         android:backgroundTint="#8E8E8E"
         android:fontFamily="@font/crayon_font"
-        android:text="Tutorial"
+        android:text="@string/tutorial"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playButton" />
