@@ -1,6 +1,11 @@
 package com.example.dotsandboxes;
 
+import static android.graphics.Color.parseColor;
+
 import android.content.Intent;
+import android.graphics.BlendMode;
+import android.graphics.LightingColorFilter;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
@@ -51,6 +56,12 @@ public class Play extends AppCompatActivity {
                 location += Math.min(back.x1, back.x2) + "" + back.y1 + "" + Math.max(back.x1, back.x2) + "" + back.y2;
 
             mapViews.get(location).setVisibility(View.VISIBLE);
+            //mapViews.get(location).setColorFilter(parseColor("#F44336"));
+            if (!back.currTurn) {
+                mapViews.get(location).setColorFilter(parseColor("#2196F3"));
+            } else {
+                mapViews.get(location).setColorFilter(parseColor("#F44336"));
+            }
 
             if(!back.isConnectPoints(back.x1, back.x2, back.y1, back.y2)){
                 back.currTurn = !back.currTurn;
