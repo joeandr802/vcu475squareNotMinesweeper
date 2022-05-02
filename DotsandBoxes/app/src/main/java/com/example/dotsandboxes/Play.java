@@ -41,7 +41,8 @@ public class Play extends AppCompatActivity {
         coords.add(contentDes[2]-48);
         coords.add(contentDes[3]-48);
 
-        back.dotsConnected(coords.get(0), coords.get(1), coords.get(2), coords.get(3));
+        back.dotsConnected(coords.get(1), coords.get(0), coords.get(3), coords.get(2));
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if(coords.get(0) == coords.get(2)) {
                 if (!back.currTurn)
@@ -59,6 +60,27 @@ public class Play extends AppCompatActivity {
 
         if(!back.isConnectPoints(back.x1, back.x2, back.y1, back.y2)){
             back.currTurn = !back.currTurn;
+        }
+
+        if(back.block != -1){
+            String imgViewID = "b" + back.block;
+            String imgViewID2 = "b" + back.block2;
+            int resID = getResources().getIdentifier(imgViewID, "id", getPackageName());
+            int resID2;
+
+            ImageView box = findViewById(resID);
+
+            if(back.currTurn)
+                box.setImageResource(R.drawable.redbox);
+            else box.setImageResource(R.drawable.bluebox);
+
+            if(back.block2 != -1) {
+                resID2 = getResources().getIdentifier(imgViewID2, "id", getPackageName());
+                ImageView box2 = findViewById(resID2);
+                if(back.currTurn)
+                    box2.setImageResource(R.drawable.redbox);
+                else box2.setImageResource(R.drawable.bluebox);
+            }
         }
 
         TextView temp = findViewById(R.id.currentTurnText);

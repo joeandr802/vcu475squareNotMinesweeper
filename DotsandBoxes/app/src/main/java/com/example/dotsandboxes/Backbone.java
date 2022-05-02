@@ -4,6 +4,9 @@ public class Backbone {
     int p1points, p2points; //keeps tally of points for the two players
     int sizeBoard = 5; // size of the board
     int numMoves; //how many moves can be made before the round ends
+    int pointsMade;
+    int block = -1;
+    int block2 = -1;
     int x1, x2, y1, y2; //x and y coords of 2 dots chosen
     boolean currTurn; //true if p1's turn, false if p2's
     String[][] dotData = new String[sizeBoard][sizeBoard]; //keeps data of board stored
@@ -24,15 +27,29 @@ public class Backbone {
     //clears the board so it can be used for repeat games
 
     public boolean isSquareFilled(int x1, int dummyX, int y1, int dummyY, int form){
+        int detBlock;
+        if(dummyY < y1)
+            detBlock = dummyX+dummyY*4;
+        else
+            detBlock = x1+y1*4;
+
         if (form == 0)  { //Base needs U and L, Dummy needs D and R
             if ((dotData[x1][y1].contains("U") && dotData[x1][y1].contains("L"))
                     && (dotData[dummyX][dummyY].contains("D") && dotData[dummyX][dummyY].contains("R"))) {
+                if(pointsMade == 1)
+                    block2 = detBlock;
+                else block = detBlock;
+
                 return true;
             }
         }
-        if (form == 1) { //Base needs D and R, Dummy needs U and L
+        else if (form == 1) { //Base needs D and R, Dummy needs U and L
             if ((dotData[x1][y1].contains("D") && dotData[x1][y1].contains("R"))
                     && (dotData[dummyX][dummyY].contains("U") && dotData[dummyX][dummyY].contains("L"))) {
+                if(pointsMade == 1)
+                    block2 = detBlock;
+                else block = detBlock;
+
                 return true;
             }
         }
@@ -50,8 +67,10 @@ public class Backbone {
     }
 
     public boolean isConnectPoints(int x1, int x2, int y1, int y2){
-        int pointsMade = 0; //home many points were made this turn
+        pointsMade = 0; //home many points were made this turn
         boolean result = false;
+        block = -1;
+        block2 = -1;
 
         if(x1 == x2){ //if nodes are vertical from each other
             if(y1>y2){
@@ -120,7 +139,6 @@ public class Backbone {
             }
         }
         //determines if points need to be added, if any
-
         updatePoints(pointsMade); //will update points correctly
         return result;
     }
