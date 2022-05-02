@@ -114,6 +114,7 @@
                 android:id="@+id/b0"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -127,6 +128,7 @@
                 android:id="@+id/b1"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -140,6 +142,7 @@
                 android:id="@+id/b2"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -153,6 +156,7 @@
                 android:id="@+id/b3"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -263,6 +267,7 @@
                 android:id="@+id/b4"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -276,6 +281,7 @@
                 android:id="@+id/b5"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -289,6 +295,7 @@
                 android:id="@+id/b6"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -302,6 +309,7 @@
                 android:id="@+id/b7"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -410,6 +418,7 @@
                 android:id="@+id/b8"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -423,6 +432,7 @@
                 android:id="@+id/b9"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -436,6 +446,7 @@
                 android:id="@+id/b10"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -449,6 +460,7 @@
                 android:id="@+id/b11"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -557,6 +569,7 @@
                 android:id="@+id/b12"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -570,6 +583,7 @@
                 android:id="@+id/b13"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -583,6 +597,7 @@
                 android:id="@+id/b14"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
@@ -596,6 +611,7 @@
                 android:id="@+id/b15"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
+                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageView
