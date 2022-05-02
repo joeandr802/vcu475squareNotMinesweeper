@@ -23,14 +23,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="173dp"
-        android:layout_height="173dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="271dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="36dp"
         android:contentDescription="@string/placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleText"
-        app:srcCompat="@drawable/dots" />
+        app:srcCompat="@drawable/logofinal" />
 
     <Button
         android:id="@+id/playButton"
