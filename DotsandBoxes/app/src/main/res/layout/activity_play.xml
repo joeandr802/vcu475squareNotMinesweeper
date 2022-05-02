@@ -31,9 +31,9 @@
                 android:id="@+id/h0001"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="0001"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots01"
@@ -47,9 +47,9 @@
                 android:id="@+id/h0102"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="0102"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots02"
@@ -63,9 +63,9 @@
                 android:id="@+id/h0203"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="0203"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots03"
@@ -79,9 +79,9 @@
                 android:id="@+id/h0304"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="0304"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots04"
@@ -101,69 +101,65 @@
                 android:id="@+id/v0010"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="0010"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b0"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v0111"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="0111"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v0212"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="0212"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v0313"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="0313"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b3"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v0414"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="0414"
+                android:onClick="dotClicked" />
         </TableRow>
 
         <TableRow
@@ -182,9 +178,9 @@
                 android:id="@+id/h1011"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="1011"
+                android:onClick="dotClicked" />
 
 
             <ImageView
@@ -199,9 +195,9 @@
                 android:id="@+id/h1112"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="1112"
+                android:onClick="dotClicked" />
 
 
             <ImageView
@@ -216,9 +212,9 @@
                 android:id="@+id/h1213"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="1213"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots13"
@@ -232,9 +228,9 @@
                 android:id="@+id/h1314"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="1314"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots14"
@@ -253,69 +249,65 @@
                 android:id="@+id/v1020"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="1020"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v1121"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="1121"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b5"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v1222"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="1222"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v1323"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="1323"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v1424"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="1424"
+                android:onClick="dotClicked" />
         </TableRow>
 
         <TableRow
@@ -334,9 +326,9 @@
                 android:id="@+id/h2021"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="2021"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots21"
@@ -350,9 +342,9 @@
                 android:id="@+id/h2122"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="2122"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots22"
@@ -366,9 +358,9 @@
                 android:id="@+id/h2223"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="2223"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots23"
@@ -382,9 +374,9 @@
                 android:id="@+id/h2324"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="2324"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots24"
@@ -403,69 +395,65 @@
                 android:id="@+id/v2030"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="2030"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v2131"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="2131"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v2232"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="2232"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b10"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v2333"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="2333"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b11"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v2434"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="2434"
+                android:onClick="dotClicked" />
         </TableRow>
 
         <TableRow
@@ -484,9 +472,9 @@
                 android:id="@+id/h3031"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="3031"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots31"
@@ -500,9 +488,9 @@
                 android:id="@+id/h3132"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="3132"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots32"
@@ -516,9 +504,9 @@
                 android:id="@+id/h3233"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="3233"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots33"
@@ -532,9 +520,9 @@
                 android:id="@+id/h3334"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="3334"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots34"
@@ -553,69 +541,66 @@
                 android:id="@+id/v3040"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
+                android:background="@android:color/transparent"
                 android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:contentDescription="3040"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <ImageView
                 android:id="@+id/b12"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v3141"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="3141"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b13"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v3242"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="3242"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b14"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v3343"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="3343"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/b15"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
                 app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
             <ImageButton
                 android:id="@+id/v3444"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/vert" />
+                android:background="@android:color/transparent"
+                android:contentDescription="3444"
+                android:onClick="dotClicked" />
         </TableRow>
 
         <TableRow
@@ -634,9 +619,9 @@
                 android:id="@+id/h4041"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="4041"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots41"
@@ -650,9 +635,9 @@
                 android:id="@+id/h4142"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="4142"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots42"
@@ -666,9 +651,9 @@
                 android:id="@+id/h4243"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="4243"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots43"
@@ -682,9 +667,9 @@
                 android:id="@+id/h4344"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:visibility="invisible"
-                android:onClick="dotClicked"
-                app:srcCompat="@drawable/horiz" />
+                android:background="@android:color/transparent"
+                android:contentDescription="4344"
+                android:onClick="dotClicked" />
 
             <ImageView
                 android:id="@+id/dots44"

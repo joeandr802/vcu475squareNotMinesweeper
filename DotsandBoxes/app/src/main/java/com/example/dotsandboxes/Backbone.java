@@ -132,38 +132,4 @@ public class Backbone {
         this.y1 = y1;
         this.y2 = y2;
     }
-    //adds functionality to connect to main game about what is played
-
-    public void results(){
-        if (p1points == p2points) {
-            System.out.printf("It's a draw!");
-        }
-        else if (p1points > p2points) {
-            System.out.printf("Player 1 wins!");
-        }
-        else {
-            System.out.printf("Player 2 wins!");
-        }
-    }// Decides and shows winner
-
-    /*public void mainGame(){
-
-        while(numMoves > 0){
-            dotsConnected(x1, x2, y1, y2); //takes two connected dots
-            if(!isConnectPoints(x1, x2, y1, y2)){
-                currTurn = !currTurn;
-            }
-            //flips player's turn if no box was filled
-
-            numMoves--;// subtracts moves to be made by 1
-        }//while moves remain to be played
-    }
-    //game itself*/
-
-    /*public static void main(String[] args){
-        Backbone back = new Backbone();
-        back.clearBoard(); //sets app to be used later
-        back.mainGame(); //runs the actual game
-        back.results(); //displays the results
-    }*/
 }
