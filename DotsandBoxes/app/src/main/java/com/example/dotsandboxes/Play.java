@@ -71,11 +71,9 @@ public class Play extends AppCompatActivity {
 
             if(back.currTurn){
                 temp.setText("Current Turn: Red");
-                temp.setTextColor(parseColor("#F44336"));
             }
             else{
                 temp.setText("Current Turn: Blue");
-                temp.setTextColor(parseColor("#2196F3"));
             }
 
             temp = (TextView) findViewById(R.id.scoreRedText);
