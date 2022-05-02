@@ -699,6 +699,7 @@
         android:fontFamily="@font/crayon_font"
         android:text="@string/current_turn"
         android:textAlignment="center"
+        android:textColor="#F44336"
         android:textSize="38sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
