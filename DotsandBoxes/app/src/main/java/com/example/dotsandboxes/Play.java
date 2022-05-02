@@ -39,10 +39,14 @@ public class Play extends AppCompatActivity {
     }
 
     public void dotClicked(View view){
+        //Gets the clicked view's description
         char[] contentDes = view.getContentDescription().toString().toCharArray();
+        //Splits the x and y coords of the button
         coords.add(contentDes[0]-48);
         coords.add(contentDes[1]-48);
+        //Totals the buttons clicked
         buttonClicked++;
+
 
         if(buttonClicked == 2){
 
